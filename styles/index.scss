@@ -94,7 +94,15 @@ $secondary-color: white;
   padding-right: 30px;
   padding-bottom: 30px;
   align-items: center;
+  transition: 0.1s ease;
 }
+.galery__images:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+//Media for Tables//
 @media (min-width: 820px) and (max-width: 1180px) {
   .header__intro {
     font-weight: 700px;
@@ -186,7 +194,7 @@ $secondary-color: white;
     background-repeat: no-repeat;
   }
 }
-
+//Media for Desktop//
 @media (min-width: 1180px) and (max-width: 1800px) {
   .header__container {
     background-image: linear-gradient(

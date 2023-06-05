@@ -1,9 +1,5 @@
 .header__container {
-  background-image: linear-gradient(
-      rgba(32, 32, 32, 0.5),
-      rgba(32, 32, 32, 0.5)
-    ),
-    url('../assets/Images/hero-bio.jpg');
+  background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("../assets/Images/hero-bio.jpg");
   width: 100vw;
   height: 55vh;
   background-size: cover;
@@ -80,6 +76,12 @@
   padding-right: 30px;
   padding-bottom: 30px;
   align-items: center;
+  transition: 0.1s ease;
+}
+
+.galery__images:hover {
+  transform: scale(0.8);
+  transition: 1s ease;
 }
 
 @media (min-width: 820px) and (max-width: 1180px) {
@@ -157,11 +159,7 @@
     height: 400px;
   }
   .header__container {
-    background-image: linear-gradient(
-        rgba(32, 32, 32, 0.5),
-        rgba(32, 32, 32, 0.5)
-      ),
-      url('../assets/Images/hero-bio.jpg');
+    background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("../assets/Images/hero-bio.jpg");
     width: 100vw;
     height: 55vh;
     background-size: cover;
@@ -171,11 +169,7 @@
 }
 @media (min-width: 1180px) and (max-width: 1800px) {
   .header__container {
-    background-image: linear-gradient(
-        rgba(32, 32, 32, 0.5),
-        rgba(32, 32, 32, 0.5)
-      ),
-      url('../assets/Images/hero-bio.jpg');
+    background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("../assets/Images/hero-bio.jpg");
     width: 100vw;
     height: 55vh;
     background-size: cover;
@@ -227,4 +221,4 @@
     padding-left: 300px;
     padding-right: 300px;
   }
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

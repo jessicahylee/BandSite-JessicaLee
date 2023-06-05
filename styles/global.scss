@@ -53,13 +53,22 @@ $secondary-color: white;
   &__bio {
     display: flex;
     flex-direction: row;
+    color: $secondary-color;
   }
+
   &__show {
     display: flex;
     flex-direction: row;
     list-style: none;
     padding-right: 30px;
     padding-left: 80px;
+  }
+  .nav__container__link {
+    color: $secondary-color;
+  }
+  .nav__hyperlink {
+    color: white;
+    text-decoration: none;
   }
 }
 .footer__container {
@@ -112,6 +121,14 @@ $secondary-color: white;
   border: 1px solid transparent;
   padding-top: 0;
 }
+.footer_logo--end {
+  @include flexdisplay;
+
+  .nav__hyperlink {
+    color: white;
+    text-decoration: none;
+  }
+}
 
 @media (min-width: 820px) and (max-width: 1180px) {
   .nav__container {
@@ -147,6 +164,11 @@ $secondary-color: white;
   .footer__container--tablet--info3 {
     @include footermeasures2;
     padding-left: 100px;
+  }
+
+  .footer__container--logoend {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 1180px) and (max-width: 1800px) {
