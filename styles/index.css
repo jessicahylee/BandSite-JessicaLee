@@ -84,6 +84,105 @@
   transition: 1s ease;
 }
 
+.container__java-topic {
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: avenir;
+  padding-left: 40px;
+}
+
+.container__java-2 {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+  color: #afafaf;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.container__java-3 {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+  color: #afafaf;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment_area {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+}
+
+.container__java-4 {
+  padding-top: 20px;
+}
+
+.button__java {
+  background-color: #323232;
+  color: white;
+}
+
+.container__java {
+  padding-left: 40px;
+}
+
+.container__comments-block {
+  padding-left: 40px;
+}
+
+.comments-name {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+}
+
+.data-data {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+  color: #afafaf;
+}
+
+.container__comments--div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container__comments--comment {
+  font-weight: 80px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: avenir;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.solid {
+  border-top: 3px solid #e1e1e1;
+}
+
+.container__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.container__java-2 {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 820px) and (max-width: 1180px) {
   .header__intro {
     font-weight: 700px;
@@ -165,6 +264,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  .container__java {
+    padding-left: 90px;
+  }
+  .container__java-4 {
+    padding-left: 200px;
+  }
+  .comment_area {
+    height: 100px;
   }
 }
 @media (min-width: 1180px) and (max-width: 1800px) {

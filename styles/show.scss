@@ -1,0 +1,132 @@
+$primary-color: #323232;
+$secondary-color: white;
+$third-color: #afafaf;
+$forth-color: #e1e1e1;
+.container__tickets--ss {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@mixin flexdisplay {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 32px;
+  font-family: avenir;
+}
+@mixin flexdisplay1 {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+}
+@mixin mildbold_ {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+}
+
+@mixin boldness {
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: avenir;
+}
+@mixin articleinfo {
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: avenir;
+}
+.header__container--show {
+  background-image: linear-gradient(
+      rgba(32, 32, 32, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url(/assets/Images/hero-shows.jpg);
+  width: 100vw;
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__intro--band {
+  padding-left: 5%;
+}
+.header__intro--show {
+  padding-left: 5%;
+}
+.container__tickets-date {
+  @include mildbold_;
+  color: #afafaf;
+}
+.container__tickets-venue {
+  @include mildbold_;
+  color: #afafaf;
+}
+.container__tickets-location {
+  @include mildbold_;
+  color: #afafaf;
+}
+.container__tickets-show {
+  @include flexdisplay;
+}
+.container__tickets--date {
+  @include flexdisplay1;
+}
+.container__tickets--venue {
+  @include flexdisplay1;
+}
+.container__tickets--location {
+  @include flexdisplay1;
+}
+.container_tickets--intro {
+  padding-left: 44px;
+}
+.solid {
+  border-top: 3px solid $forth-color;
+}
+.header__intro--show {
+  @include flexdisplay1;
+  color: $secondary-color;
+}
+.header__intro--band {
+  @include flexdisplay;
+  color: $secondary-color;
+}
+.buttonTickets {
+  background-color: #323232;
+  color: white;
+  margin-bottom: 5px;
+  height: auto;
+}
+//Media for Tables//
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .container__tickets {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__tickets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+  }
+}
+//Media for Desktop//
+@media (min-width: 1180px) and (max-width: 1800px) {
+  .container__tickets-show {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__tickets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+  }
+}

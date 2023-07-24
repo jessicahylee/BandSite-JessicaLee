@@ -1,0 +1,132 @@
+.container__tickets--ss {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__container--show {
+  background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url(/assets/Images/hero-shows.jpg);
+  width: 100vw;
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__intro--band {
+  padding-left: 5%;
+}
+
+.header__intro--show {
+  padding-left: 5%;
+}
+
+.container__tickets-date {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+  color: #afafaf;
+}
+
+.container__tickets-venue {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+  color: #afafaf;
+}
+
+.container__tickets-location {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+  color: #afafaf;
+}
+
+.container__tickets-show {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 32px;
+  font-family: avenir;
+}
+
+.container__tickets--date {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+}
+
+.container__tickets--venue {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+}
+
+.container__tickets--location {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+}
+
+.container_tickets--intro {
+  padding-left: 44px;
+}
+
+.solid {
+  border-top: 3px solid #e1e1e1;
+}
+
+.header__intro--show {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+  color: white;
+}
+
+.header__intro--band {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 32px;
+  font-family: avenir;
+  color: white;
+}
+
+.buttonTickets {
+  background-color: #323232;
+  color: white;
+  margin-bottom: 5px;
+  height: auto;
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .container__tickets {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__tickets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+  }
+}
+@media (min-width: 1180px) and (max-width: 1800px) {
+  .container__tickets-show {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__tickets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+  }
+}/*# sourceMappingURL=show.css.map */
