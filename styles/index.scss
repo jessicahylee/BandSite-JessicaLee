@@ -1,0 +1,342 @@
+$primary-color: #323232;
+$secondary-color: white;
+$third-color: #afafaf;
+$forth-color: #e1e1e1;
+
+@mixin flexdisplay {
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: avenir;
+}
+@mixin flexdisplay1 {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: avenir;
+}
+
+@mixin mildbold_ {
+  font-weight: 100px;
+  font-size: 18px;
+  line: height 30px;
+  font-family: avenir;
+}
+
+@mixin boldness {
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: avenir;
+}
+@mixin articleinfo {
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: avenir;
+}
+
+.header__container {
+  background-image: linear-gradient(
+      rgba(32, 32, 32, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url('../assets/Images/hero-bio.jpg');
+  width: 100vw;
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__intro {
+  @include flexdisplay;
+  color: $secondary-color;
+  margin: 0;
+  text-align: center;
+  padding-top: 70px;
+}
+.article__container {
+  display: flex;
+  flex-direction: column;
+}
+.container__galery {
+  background-color: #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article__about--musicians {
+  @include flexdisplay;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.article__image {
+  height: 50vh;
+  width: 90vw;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.article__text--first {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  font-family: avenir;
+}
+.article__text--title {
+  font-weight: 80px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: avenir;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.article__text--title2 {
+  font-weight: 80px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: avenir;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.galery__images {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  transition: 0.1s ease;
+}
+.galery__images:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+.container__java-topic {
+  @include flexdisplay;
+  padding-left: 40px;
+}
+.container__java-2 {
+  @include mildbold_;
+  color: #afafaf;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.container__java-3 {
+  @include mildbold_;
+  color: #afafaf;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  display:flex;
+  flex-direction: column;
+}
+.comment_area {
+  @include flexdisplay1;
+}
+
+.container__java-4 {
+  padding-top: 20px;
+}
+.button__java {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+.container__java {
+  padding-left: 40px;
+}
+.container__comments-block {
+  padding-left: 40px;
+}
+.comments-name {
+  @include mildbold_();
+}
+.data-data {
+  @include mildbold_();
+  color: $third-color;
+}
+.container__comments--div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container__comments--comment {
+  font-weight: 80px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: avenir;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.solid {
+  border-top: 3px solid $forth-color;
+}
+.container__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+  .container__java-2{
+  display:flex;
+  flex-direction: column;
+  }
+//Media for Tables//
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .header__intro {
+    font-weight: 700px;
+    font-size: 60px;
+    line-height: 68px;
+    padding-top: 200px;
+    padding-right: 500px;
+  }
+  .article__about--musicians {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .article__container--second {
+    display: flex;
+    flex-direction: column;
+  }
+  .article__text--underimage {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+  }
+  .article__paragraph1 {
+    font-weight: 100px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: avenir;
+  }
+  .article__text-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .article__text--title {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: avenir;
+  }
+  .article__text--title2 {
+    font-weight: 300px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: avenir;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+  .container__galery {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    // padding-left: 30px;
+  }
+  .container__galery--first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .galery_second {
+    display: flex;
+    flex-direction: row;
+  }
+  .galery__images {
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .article__container--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article__image {
+    width: 70%;
+    height: 400px;
+    // position: relative;
+    // left: 195px;
+  }
+  .header__container {
+    background-image: linear-gradient(
+        rgba(32, 32, 32, 0.5),
+        rgba(32, 32, 32, 0.5)
+      ),
+      url('../assets/Images/hero-bio.jpg');
+    width: 100vw;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container__java {
+    padding-left: 90px;
+  }
+  .container__java-4 {
+    padding-left: 200px;
+  }
+  .comment_area {
+    height: 100px;
+  }
+}
+//Media for Desktop//
+@media (min-width: 1180px) and (max-width: 1800px) {
+  .header__container {
+    background-image: linear-gradient(
+        rgba(32, 32, 32, 0.5),
+        rgba(32, 32, 32, 0.5)
+      ),
+      url('../assets/Images/hero-bio.jpg');
+    width: 100vw;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header__intro {
+    font-weight: 700px;
+    font-size: 60px;
+    line-height: 68px;
+    padding-top: 200px;
+    padding-right: 200px;
+  }
+  .article__image {
+    width: 70%;
+    height: 55vh;
+    width: 55vw;
+    padding-left: 300px;
+  }
+  .article__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article__text-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .article__text--underimage {
+    padding-left: 100px;
+  }
+  .article__text--title2 {
+    padding-left: 130px;
+    padding-right: 100px;
+  }
+  .container__galery {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__galery--first {
+    display: flex;
+    flex-direction: column;
+  }
+  .galery_second {
+    display: flex;
+    flex-direction: row;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
